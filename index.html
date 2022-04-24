@@ -11,7 +11,8 @@
     <title> The Name Guesser</title>
     </head>
     <body>
-<h1>Let's find out where you are originally from 😉</h1>
+        <div class="Name-guesser">
+<h1>Let's find out where you are originally from 🌎😉</h1>
 <div>
  <form id="search-form" class="mb-3">
      <div class="row">
@@ -19,21 +20,27 @@
 <input type="search" placeholder="Type your name" class="form-control" id="name-input"/>
 </div>
 <div class="col-3">
-<input type="submit" value="Search" class="btn btn-primary w-50"/>
+<input type="submit" value="Search" class="btn btn-primary w-70"/>
 </div>
 </div>
  </form>
 </div>
 <div>
     <ul>
+        <p>
+            Your gender is:
+        </p>
         <li id="gender"></li>
+        <p>
+            You are probably from one of these countries:
+        </p>
     <li id="country"></li>
 <li id="country1"></li>
 <li id="country2"></li>
 <li id="country3"></li>
 </ul>
 </div>
-
+</div>
 
 <script src="script.js"></script>
 </body>

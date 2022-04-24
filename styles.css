@@ -1,3 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 ul{
     text-decoration: none;
+
+}
+.Name-guesser{
+max-width: 600px;
+margin: 60px auto;
+padding: 30px;
+border: 1px solid #dadde1;
+border-radius: 5px;
+background-color:#FFDDEE;
+height: 470px;
+}
+h1,p {
+   color: #F473B9;
+}
+ul{
+    color: #4D77FF;
+    list-style: none;
 }
