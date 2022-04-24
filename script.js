@@ -11,12 +11,19 @@ function displayTheName(response){
     country2Element.innerHTML= response.data.country_of_origin[2].country_name;  
     country3Element.innerHTML= response.data.country_of_origin[3].country_name;            
 }
+function search(name){
+    let apiKey = "67fUXxSrczwYZ5nsepcE6RorXllBNaprvA7D";
+    let apiUrl = `https://gender-api.com/get-country-of-origin?name=${name}&key=${apiKey}`;
+    axios.get(apiUrl).then(displayTheName);
+}
+
     
+function handleSubmit(event){
+    event.preventDefault();
+    let nameInputElement = document.querySelector("#name-input");
+    search(nameInputElement.value);
+}
 
-let apiKey = "67fUXxSrczwYZ5nsepcE6RorXllBNaprvA7D";
-let apiUrl = `https://gender-api.com/get-country-of-origin?name=Jan&key=${apiKey}`;
 
-
-
-
-axios.get(apiUrl).then(displayTheName);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
