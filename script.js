@@ -12,7 +12,7 @@ function displayTheName(response){
     country3Element.innerHTML= response.data.country_of_origin[3].country_name;            
 }
 function search(name){
-    let apiKey = "67fUXxSrczwYZ5nsepcE6RorXllBNaprvA7D";
+    let apiKey = "bb66ae417c02495291bc9e224a7c580e";
     let apiUrl = `https://gender-api.com/get-country-of-origin?name=${name}&key=${apiKey}`;
     axios.get(apiUrl).then(displayTheName);
 }
